@@ -1,4 +1,4 @@
-baseURL = "https://example.com/"
+baseURL = "/"
 languageCode = "fr"
 theme = 'hugo-theme-rfcish'
 #Copyright = "&copy; 2025 "
