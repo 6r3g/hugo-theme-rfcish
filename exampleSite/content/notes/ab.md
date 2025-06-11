@@ -1,7 +1,6 @@
 ---
 title: "ab"
 author: GTFObins
-date: 1970-01-01
 categories: Tips
 series: GTFObins
 tags: ["file upload","file download",suid,sudo]

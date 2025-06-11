@@ -1,7 +1,6 @@
 ---
 title: "aa-exec"
 author: GTFObins
-date: 1970-01-01
 categories: Tips
 series: GTFObins
 tags: [shell,suid,sudo]
