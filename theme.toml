@@ -1,12 +1,21 @@
-name = "plain"
+name = "RFCish"
 license = "MIT"
-licenselink = "https://github.com/yanlinlin82/simple-style/blob/master/LICENSE"
-description = "Very plain style, reminiscent of text files"
-homepage = "https://github.com/AngeloR/plain-hugo-theme"
-tags = [ "simple", "plain", "blog", "white", "minimal" ]
-features = [ "simple", "white", "plain" ]
-min_version = "0.61.0"
+licenselink = "https://github.com/6r3g/hugo-theme-rfcish/LICENSE"
+description = "Simple theme heavily inspired by RFCs"
 
+# The home page of the theme, where the source can be found
+homepage = "https://github.com/6r3g/hugo-theme-rfcish"
+
+# If you have a running demo of the theme
+#demosite = 'https://owner.github.io/repo'
+
+# If the theme has a single author
 [author]
-name = "Angelo R."
-homepage = "https://xangelo.ca"
+  name = '6r3g'
+  homepage = 'https://6r3g.github.io'
+
+# If porting an existing theme
+[original]
+  author = 'AngeloR'
+  homepage = 'https://xangelo.ca/'
+  repo = 'https://github.com/AngeloR/plain-hugo-theme'
