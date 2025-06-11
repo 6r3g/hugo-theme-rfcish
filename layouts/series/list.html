@@ -1,0 +1,19 @@
+{{ define "main" }}
+<div class="breadcrumbs">
+  {{/*  <h1>{{ .Page.Title }}</h1>  */}}
+  {{ range .Ancestors.Reverse }}
+  <a href="{{ .RelPermalink }}">{{ if .IsHome }}{{ "Home" }}{{ else }}{{ .Title }}{{ end }}</a>
+  <span> > </span>
+  {{ end }}
+  <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+</div>
+<ul class="article-list">
+  {{ range .Site.Taxonomies.series }}
+    <li class="">
+      <a href="{{ .Page.RelPermalink }}">{{ .Page.Title }} </a>
+      <span class="divider"></span>
+      <span class="pubdate">({{ .Count }})</span>
+    </li>
+  {{ end }}
+</ul>
+{{ end }}

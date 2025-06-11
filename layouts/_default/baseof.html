@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, minimum-scale=1.0" />
+{{ partial "html-meta.html" . -}}
+<title>{{ if not .IsHome }}{{ .Title }} | {{ end }}{{ .Site.Title }}</title>
+<link rel="stylesheet" type="text/css" href="{{ "/css/main.css" | relURL }}" /> 
+<!-- https://bwiggs.com/posts/2021-08-03-hugo-syntax-highlight-dark-light/ -->
+<style type="text/css" media="screen">
+  @media (prefers-color-scheme: dark) { 
+    {{ partial "css/syntax-dark.css" . | safeCSS }}
+  }
+  @media (prefers-color-scheme: light) { 
+    {{ partial "css/syntax-light.css" . | safeCSS }} 
+  }
+</style>
+{{ with .Site.Params.favicon -}}
+<link rel="icon" href="{{ . }}" type="image/x-icon" />
+{{ end -}}
+{{ with .OutputFormats.Get "rss" -}}
+    {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+{{ end -}}
+</head>
+<body>
+<header>
+{{ with .Site.Menus.parent -}}
+  <nav>
+    {{ range . -}}
+    <a href="{{ .URL }}">{{ .Name }}</a>
+    {{ end -}}
+  </nav>
+  {{ end -}}
+  <div>
+	<a class="title" href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+  </div>
+  <div>
+  <nav class="menu">
+    {{- range .Site.Menus.main -}}
+    <a class="menu" href="{{ .URL }}">{{ .Name }}</a>
+    {{- end -}}
+  </nav>
+</div>
+</header>
+<main>
+  {{- if .Site.Params.subtitle -}}
+  {{- if .IsHome -}}
+  <div class="subtitle">
+  <p>{{ .Site.Params.Subtitle | .Page.RenderString }}</p>
+</div>
+  {{- end -}}
+  {{- end -}}
+  <article>
+    {{ block "main" . }}{{- end }}
+  </article>
+</main>
+<footer>
+  <div>
+    <div>
+      <br>
+      {{- if .Site.Params.ShowThemeInfo -}}
+      <span class="theme-info">
+        Powered by <a href="https://gohugo.io/">Hugo</a> with <a href="https://github.com/6r3g/hugo-theme-RFCish">RFCish</a> 
+{{/*          {{ if .IsTranslated }}
+        , content sometimes available in </span>
+        {{ i18n "translation" }}
+          {{ range .Translations }}
+            <span><a href="{{ .RelPermalink }}">{{ default .Lang .Language.LanguageName }}</a>.</span>
+          {{ end }}
+        {{ end }}  */}}
+      {{- end -}}
+      {{- if .Site.Copyright -}} 
+      <span class="copyright">{{ .Site.Copyright | markdownify }} </span> 
+      {{- end -}}
+    </div>
+  </div>
+</footer>
+</body>
+</html>

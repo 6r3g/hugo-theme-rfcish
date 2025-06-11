@@ -1,0 +1,18 @@
+{{ define "main" }}
+<div class="breadcrumbs">
+  {{ range .Ancestors.Reverse }}
+  <a href="{{ .RelPermalink }}">{{ if .IsHome }}{{ "Home" }}{{ else }}{{ .Title }}{{ end }}</a>
+  <span> > </span>
+  {{ end }}
+  <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+</div>
+<ul class="article-list">
+  {{ range .Pages }}
+    <li>
+      <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+      <span class="divider"></span> 
+      <span class="pubdate">{{ .Date.Format "2006-01-02" }}</span>
+    </li>
+  {{ end }}
+</ul>
+{{ end }}

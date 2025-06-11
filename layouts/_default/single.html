@@ -1,0 +1,89 @@
+{{ define "main" -}}
+<div class="breadcrumbs">
+	{{ range .Ancestors.Reverse }}
+	<a href="{{ .RelPermalink }}">{{ if .IsHome }}{{ "Home" }}{{ else }}{{ .Title }}{{ end }}</a>
+	<span> > </span>
+	{{ end }}
+	<a href="{{ .RelPermalink }}">{{ .Title }}</a>
+  </div>
+<section class="front-block">
+	<div class="title">
+		<div>Title: {{ .Title}}</div>
+		<span class="divider"></span>
+		{{ if .Params.author -}}
+		<div>Author: {{ .Params.author}}</div>
+		{{ else }}
+		<div>Author: {{ .Site.Params.author}}</div>
+		{{- end -}}
+	</div>
+
+	<div class="meta">
+		{{ if .Params.categories -}}
+		{{- with index (.GetTerms "categories") 0 -}}
+		<div>Category: <a href="{{ .Permalink }}">{{ .LinkTitle }}</a></div>
+		{{- end -}}
+		{{ else }}
+		<div>Category: - </div>
+		{{- end -}}
+		<span class="divider"></span>
+		{{ if .Date -}}
+		<div>Date: {{ .Date.Format "2006-01-02" }}</div>
+		{{ else }}
+		<div>Date: - </div>
+		{{ end -}}
+	</div>
+
+	<div class="meta">
+		{{ if .Params.series -}}
+		{{- with index (.GetTerms "series") 0 -}}
+		<div>Series: <a href="{{ .Permalink }}">{{ .LinkTitle }}</a></div>
+		{{- end -}}
+		{{ else }}
+		<div>Series: - </div>
+		{{- end -}}
+		<span class="divider"></span>
+		<div>Draft: {{ .Draft }} </div>
+	</div>
+
+	<div class="meta">
+		{{ if .IsTranslated }}
+  		{{ i18n "translation" }}
+  		{{ range .Translations }}
+    		<div>Translated: <a href="{{ .RelPermalink }}">{{ default .Lang .Language.LanguageName }}</a></div>
+  		{{ end }}
+		{{ else }}
+			<div>Translated: false </div>
+		{{ end }}
+		<span class="divider"></span>
+		<div>Words: {{ .WordCount }}</div>
+	</div>
+
+		{{ if .Params.tags -}}
+		<div class="tags">Tags: {{ range .Params.tags -}}<span class="tag"><a href="{{ "/tags/" | relURL }}{{ . | urlize }}">#{{ . }}</a></span>
+		{{ end -}}
+		</div>
+		{{ else }}
+		<div class="tags">Tags: -</div>
+		{{ end -}}
+		<span class="divider"></span>
+		{{ if .Params.toc -}}
+		<div class="toc-block">
+		<a class="toctitle">Table of Contents</a><br>
+		<aside class="toc">{{ .TableOfContents }}</aside>
+		</div>
+		{{ else }}
+		{{ end -}}
+		{{ if .Site.Params.toc -}}
+		<div class="toc-block">
+			<a class="toctitle">Table of Contents</a>
+			<br>
+			<aside class="toc">{{ .TableOfContents }}</aside>
+		</div>
+		{{ else }}
+		{{ end -}}
+</section>
+<section class="content">
+	{{ .Content -}}
+</section>
+{{ end -}}
+

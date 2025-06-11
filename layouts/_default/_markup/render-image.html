@@ -1,0 +1,3 @@
+<p class="body">
+    <img src="/img/{{ .Destination | safeURL }}" alt="{{ .Text }}" {{ with .Title }} title="{{ . }}" loading="lazy" {{ end }} />
+</p>
