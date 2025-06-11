@@ -14,15 +14,15 @@ toc = false # Default no ToC, declare "toc: true" in post for override
 
 [languages]
   [languages.fr]
-    title = "Blog title"
+    title = "RFCish demo"
   [languages.fr.params]
-    subtitle = "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..."
+    subtitle = "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut tempore et dolore..."
     languageName = "fr"
     weight = 1
   [languages.en]
-    title = "Blog title"
+    title = "RFCish demo"
   [languages.en.params]
-    subtitle = "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...."
+    subtitle = "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut tempore et dolore...."
     languageName = "en"
     weight = 2
 
@@ -67,3 +67,7 @@ pagersize = 20
     name = 'Contact'
     pageRef = '/contact'
     weight = 30
+  [[menus.main]]
+    name = 'About'
+    pageRef = '/about'
+    weight = 40
