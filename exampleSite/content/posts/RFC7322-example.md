@@ -1,5 +1,5 @@
 ---
-title: "RFC 7322: RFC Style Guide"
+title: "RFC 7322 - RFC Style Guide"
 author: H. Flanagan, S. Ginoza
 date: 2014-09-01
 categories: Showcase
@@ -45,6 +45,7 @@ Provisions Relating to IETF Documents
 publication of this document.  Please review these documents
 carefully, as they describe your rights and restrictions with respect
 to this document.
+
 ## Introduction
 
 The ultimate goal of the RFC publication process is to produce
