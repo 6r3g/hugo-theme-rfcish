@@ -9,6 +9,7 @@ DefaultContentLanguage = "fr"
 favicon = "/img/favicon.ico"
 author = "Author"
 description = "Clean and simple blog"
+mainSections = "posts" # Only list posts on home
 ShowThemeInfo = true
 toc = false # Default no ToC, declare "toc: true" in post for override
 

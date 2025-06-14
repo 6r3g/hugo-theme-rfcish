@@ -3,7 +3,7 @@
   {{ .Content -}}
 </div>
 <ul class="article-list">
-  {{ range (.Paginate ( where .Site.RegularPages "Type" "in" site.Params.mainSections )).Pages -}}
+  {{ range (.Paginate ( where .Site.RegularPages "Section" "in" site.Params.mainSections )).Pages -}}
   <li><a href="{{ .RelPermalink }}">{{ .Title }}</a> <span class="divider"></span> <span class="pubdate">{{ .Date.Format "2006-01-02" }}</span></li>
   {{ end -}}
 </ul>
