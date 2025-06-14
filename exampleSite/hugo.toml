@@ -1,14 +1,14 @@
 baseURL = "/"
 languageCode = "fr"
 theme = 'hugo-theme-rfcish'
-#Copyright = "&copy; 2025 "
+Copyright = "&copy; 2025 "
 enableEmoji = true
 DefaultContentLanguage = "fr"
 
 [params]
-favicon = "/img/favicon.ico"
 author = "Author"
 description = "Clean and simple blog"
+favicon = "/img/favicon.ico"
 mainSections = "posts" # Only list posts on home
 ShowThemeInfo = true
 toc = false # Default no ToC, declare "toc: true" in post for override
