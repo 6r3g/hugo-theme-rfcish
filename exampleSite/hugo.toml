@@ -65,10 +65,6 @@ pagersize = 20
     pageRef = '/notes'
     weight = 20
   [[menus.main]]
-    name = 'Contact'
-    pageRef = '/contact'
-    weight = 30
-  [[menus.main]]
     name = 'About'
     pageRef = '/about'
-    weight = 40
+    weight = 30
