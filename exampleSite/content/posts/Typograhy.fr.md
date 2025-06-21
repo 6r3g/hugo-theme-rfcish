@@ -9,19 +9,6 @@ toc: true
 
 language : french
 
-# Abstract
-
-This document describes ...
-
-# Status of This Memo
-
-This document is ...
-
-# Copyright Notice
-
-Copyright (c) 2025 ...
-
-
 # Abstract (H1 nocount)
 
 Lid est laborum et dolorum fuga. Et harum quidem rerum facilis est et expeditasi distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihilse impedit quo minus id quod amets untra dolor amet sad. Sed ut perspser iciatis unde omnis iste natus error sit voluptatem accusantium doloremque laste. Dolores sadips ipsums sits.
@@ -129,13 +116,19 @@ https://diagon.arthursonzogni.com/#Sequence
 ### Blockquote with attribution in footer notes
 
 > Don't communicate by sharing memory, share memory by communicating.<br>
-> — <cite>Rob Pike[^1]</cite>
+> — <cite>Rob Pike [^1]</cite>
 
 [^1]: The above quote is excerpted from Rob Pike's [talk](https://www.youtube.com/watch?v=PAAkCSZUG1c) during Gopherfest, November 18, 2015.
 
 ### Margin note
 
-There is an margin note here. {{< marginnote >}}NB : This is a marginnote. It has no indicators on big screens. So may be a good idea to prefix them with NB{{< /marginnote >}}
+There is an margin note here. {{< marginnote >}}NB : This is a marginnote. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus{{< /marginnote >}} At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. 
+
+Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.
+
+### Sidenote
+
+There is a sidenote here.{{< sidenote >}} This is a sidenote! It has a little number. cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus{{< /sidenote >}} Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.
 
 ### Other Elements — abbr, sub, sup, kbd, mark
 
@@ -197,10 +190,6 @@ Most <mark>salamanders</mark> are nocturnal, and hunt for ==insects==.
 | Bob    | A good guy, who likes to communicate with Alice                         |
 | Malroy | Not so nice guy. Tries to mess with the communication of Alice and Bob. |
 
-
-### Sidenote
-
-There is a sidenote{{< sidenote >}} This is a sidenote! It has a little number. {{< /sidenote >}} here bla bla blah
 
 ### List
 
