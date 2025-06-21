@@ -1,9 +1,9 @@
 baseURL = "/"
-languageCode = "fr"
+languageCode = "en"
 theme = 'hugo-theme-rfcish'
 Copyright = "&copy; 2025 "
 enableEmoji = true
-DefaultContentLanguage = "fr"
+DefaultContentLanguage = "en"
 
 [params]
 author = "Author"
@@ -14,17 +14,17 @@ ShowThemeInfo = true
 toc = false # Default no ToC, declare "toc: true" in post for override
 
 [languages]
-  [languages.fr]
-    title = "RFCish demo"
-  [languages.fr.params]
-    subtitle = "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut tempore et dolore..."
-    languageName = "fr"
-    weight = 1
   [languages.en]
     title = "RFCish demo"
   [languages.en.params]
     subtitle = "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut tempore et dolore...."
     languageName = "en"
+    weight = 1
+  [languages.fr]
+    title = "RFCish demo"
+  [languages.fr.params]
+    subtitle = "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut tempore et dolore..."
+    languageName = "fr"
     weight = 2
 
 [taxonomies]
