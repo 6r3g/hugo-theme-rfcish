@@ -17,13 +17,13 @@ toc = false # Default no ToC, declare "toc: true" in post for override
   [languages.en]
     title = "RFCish demo"
   [languages.en.params]
-    subtitle = "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut tempore et dolore...."
+    subtitle = "Hi everyone :wave: ! Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut tempore et dolore vero eos et accusamus corrupti quos dolores mollitia animi est."
     languageName = "en"
     weight = 1
   [languages.fr]
     title = "RFCish demo"
   [languages.fr.params]
-    subtitle = "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut tempore et dolore..."
+    subtitle = "Hi everyone :wave: ! Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut tempore et dolore vero eos et accusamus corrupti quos dolores mollitia animi est."
     languageName = "fr"
     weight = 2
 
