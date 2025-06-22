@@ -30,6 +30,8 @@ todo
 
 todo
 
+Tested on Hugo version 0.144.2
+
 ```bash
 $ hugo new site demo
 $ cd demo/themes
