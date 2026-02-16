@@ -10,7 +10,6 @@ Forked from [Plain theme](https://github.com/AngeloR/plain-hugo-theme).
 
 Everything I need or think I need...
 
-- Monospaced
 - Table of contents
 - Taxonomies : tags, categories and series
 - [Catppuccin](https://catppuccin.com/) color scheme (Mocha or Latte)
