@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="{{ site.Language.LanguageCode }}">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, minimum-scale=1.0" />
@@ -39,6 +39,7 @@
     {{- range .Site.Menus.main -}}
     <a class="menu" href="{{ .URL }}">{{ .Name }}</a>
     {{- end -}}
+    <!-- <label class="toggle-color-scheme"><input class="toggle-color-scheme" type="checkbox" name="toggle-color-scheme"></label> -->
   </nav>
 </div>
 </header>

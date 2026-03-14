@@ -1,6 +1,6 @@
 # RFCish
 
-RFCish is a minimal and focus content theme for Hugo.
+RFCish is a minimal, monospaced, focus content and without JS theme for Hugo.
 
 As the name suggests, it draws heavily on the look of RFCs in general.
 
@@ -10,6 +10,7 @@ Forked from [Plain theme](https://github.com/AngeloR/plain-hugo-theme).
 
 Everything I need or think I need...
 
+- Monospaced
 - Table of contents
 - Taxonomies : tags, categories and series
 - [Catppuccin](https://catppuccin.com/) color scheme (Mocha or Latte)
@@ -28,8 +29,6 @@ todo
 ## Installation
 
 todo
-
-Tested on Hugo version 0.144.2
 
 ```bash
 $ hugo new site demo
