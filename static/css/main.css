@@ -562,9 +562,14 @@ footer {
 	margin-block: 3rem;
 }
 
-/* fix tabwidth default to 8 with noclasses = false
-https://discourse.gohugo.io/t/is-using-pygmentsuseclasses-true-affecting-the-tabwidth/31648/2 */
+/* fix tabwidth default to 8 with noclasses = false and text size rendering issues
+https://discourse.gohugo.io/t/is-using-pygmentsuseclasses-true-affecting-the-tabwidth/31648/2 
+https://nathan.rs/posts/fixing-ios-codeblocks/ */
 pre.chroma {
+	text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
 	-moz-tab-size:4;
 	-o-tab-size:4;
 	tab-size:4;
