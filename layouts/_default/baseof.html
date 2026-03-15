@@ -35,12 +35,22 @@
 	<a class="title" href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
   </div>
   <div>
-  <nav class="menu">
+  <!-- <nav class="menu">
     {{- range .Site.Menus.main -}}
     <a class="menu" href="{{ .URL }}">{{ .Name }}</a>
     {{- end -}}
-    <!-- <label class="toggle-color-scheme"><input class="toggle-color-scheme" type="checkbox" name="toggle-color-scheme"></label> -->
-  </nav>
+  </nav> -->
+  <!-- hamburger test -->
+  <nav>
+  <input type="checkbox" id="menu-toggle" class="menu-toggle">
+  <label for="menu-toggle" class="hamburger">☰</label>
+  <ul class="nav-links">
+  {{- range .Site.Menus.main -}}
+   <li><a class="menu" href="{{ .URL }}">{{ .Name }}</a></li>
+  {{- end -}}
+  </ul>
+</nav>
+<!-- hamburger test fin -->
 </div>
 </header>
 <main>
